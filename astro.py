@@ -1,4 +1,4 @@
-﻿import ephem
+import ephem
 logo = """
 
 ░█████╗░░██████╗████████╗██████╗░░█████╗░██████╗░░█████╗░██████╗░████████╗
@@ -58,7 +58,7 @@ while True:
     azimuths = [sun.az, mercury.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "sun mercury")
         results = (str(observer.date), "azimuth sun mercury")
         f = open("demofile2.txt", "a")
@@ -99,7 +99,7 @@ while True:
     azimuths = [sun.az, venus.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "sun venus")
         results = (str(observer.date), "azimuth sun venus")
         f = open("demofile2.txt", "a")
@@ -140,7 +140,7 @@ while True:
     azimuths = [sun.az, moon.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "sun moon")
         results = (str(observer.date), "azimuth sun moon")
         f = open("demofile2.txt", "a")
@@ -181,7 +181,7 @@ while True:
     azimuths = [sun.az, mars.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "sun mars")
         results = (str(observer.date), "azimuth sun mars")
         f = open("demofile2.txt", "a")
@@ -222,7 +222,7 @@ while True:
     azimuths = [sun.az, jupiter.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "sun jupiter")
         results = (str(observer.date), "azimuth sun jupiter")
         f = open("demofile2.txt", "a")
@@ -264,7 +264,7 @@ while True:
     azimuths = [sun.az, saturn.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "sun saturn")
         results = (str(observer.date), "azimuth sun saturn")
         f = open("demofile2.txt", "a")
@@ -306,7 +306,7 @@ while True:
     azimuths = [sun.az, uranus.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "sun uranus")
         results = (str(observer.date), "azimuth sun uranus")
         f = open("demofile2.txt", "a")
@@ -348,7 +348,7 @@ while True:
     azimuths = [sun.az, neptune.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "sun neptune")
         results = (str(observer.date), "azimuth sun neptune" )
         f = open("demofile2.txt", "a")
@@ -390,7 +390,7 @@ while True:
     azimuths = [sun.az, pluto.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "sun pluto")
         results = (str(observer.date), "azimuth sun pluto")
         f = open("demofile2.txt", "a")
@@ -432,7 +432,7 @@ while True:
     azimuths = [mercury.az, venus.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mercur venus")
         results = (str(observer.date), "azimuth mercury venus")
         f = open("demofile2.txt", "a")
@@ -474,7 +474,7 @@ while True:
     azimuths = [mercury.az, moon.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mercur moon")
         results = (str(observer.date), "azimuth mercury moon")
         f = open("demofile2.txt", "a")
@@ -516,7 +516,7 @@ while True:
     azimuths = [mercury.az, mars.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), " mercur mars")
         results = (str(observer.date), "azimuth merc mars")
         f = open("demofile2.txt", "a")
@@ -558,7 +558,7 @@ while True:
     azimuths = [mercury.az, jupiter.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mercur jupiter")
         results = (str(observer.date), "azimuth merc jupiter")
         f = open("demofile2.txt", "a")
@@ -600,7 +600,7 @@ while True:
     azimuths = [mercury.az, saturn.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mercur saturn")
         results = (str(observer.date), "azimuth merc sat")
         f = open("demofile2.txt", "a")
@@ -642,7 +642,7 @@ while True:
     azimuths = [mercury.az, uranus.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mercur uranus")
         results = (str(observer.date), "azimuth merc uransu")
         f = open("demofile2.txt", "a")
@@ -684,7 +684,7 @@ while True:
     azimuths = [mercury.az, neptune.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mercur neptune")
         results = (str(observer.date), "azimuth merc nept")
         f = open("demofile2.txt", "a")
@@ -726,7 +726,7 @@ while True:
     azimuths = [mercury.az, pluto.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mercur pluto")
         results = (str(observer.date), "azimuth merc pluto")
         f = open("demofile2.txt", "a")
@@ -768,7 +768,7 @@ while True:
     azimuths = [venus.az, moon.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "venus moon")
         results = (str(observer.date), "azimuth venus moon")
         f = open("demofile2.txt", "a")
@@ -810,7 +810,7 @@ while True:
     azimuths = [venus.az, mars.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "venus mars")
         results = (str(observer.date), "azimuth venbus mars")
         f = open("demofile2.txt", "a")
@@ -852,7 +852,7 @@ while True:
     azimuths = [venus.az, jupiter.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "venus jupiter")
         results = (str(observer.date), "azimuth venus jupiter")
         f = open("demofile2.txt", "a")
@@ -894,7 +894,7 @@ while True:
     azimuths = [venus.az, saturn.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "venus saturn")
         results = (str(observer.date), "azimuth venus saturn")
         f = open("demofile2.txt", "a")
@@ -936,7 +936,7 @@ while True:
     azimuths = [venus.az, uranus.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "venus uranus")
         results = (str(observer.date), "azimuth venus uranus")
         f = open("demofile2.txt", "a")
@@ -978,7 +978,7 @@ while True:
     azimuths = [venus.az, neptune.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "venus neptun")
         results = (str(observer.date), "azimuth venus neptune")
         f = open("demofile2.txt", "a")
@@ -1020,7 +1020,7 @@ while True:
     azimuths = [venus.az, pluto.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "venus pluto")
         results = (str(observer.date), "azimuth venus pluto")
         f = open("demofile2.txt", "a")
@@ -1062,7 +1062,7 @@ while True:
     azimuths = [moon.az, mars.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "moon mars")
         results = (str(observer.date), "azimuth moon mars")
         f = open("demofile2.txt", "a")
@@ -1104,7 +1104,7 @@ while True:
     azimuths = [moon.az, jupiter.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), " moon jupiter")
         results = (str(observer.date), "azimuth moon jupiter")
         f = open("demofile2.txt", "a")
@@ -1146,7 +1146,7 @@ while True:
     azimuths = [moon.az, saturn.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "moon saturn")
         results = (str(observer.date), "azimuth moon sat")
         f = open("demofile2.txt", "a")
@@ -1187,7 +1187,7 @@ while True:
     azimuths = [moon.az, uranus.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "moon uranus")
         results = (str(observer.date), "azimuth moon ura")
         f = open("demofile2.txt", "a")
@@ -1228,7 +1228,7 @@ while True:
     azimuths = [moon.az, neptune.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "moon neptune")
         results = (str(observer.date), "azimuth moon neptune")
         f = open("demofile2.txt", "a")
@@ -1270,7 +1270,7 @@ while True:
     azimuths = [moon.az, pluto.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "moon pluto")
         results = (str(observer.date), "azimuth moon pluto")
         f = open("demofile2.txt", "a")
@@ -1312,7 +1312,7 @@ while True:
     azimuths = [mars.az, jupiter.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mars jupiter")
         results = (str(observer.date), "azimuth mars jupiter")
         f = open("demofile2.txt", "a")
@@ -1354,7 +1354,7 @@ while True:
     azimuths = [mars.az, saturn.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mars sat")
         results = (str(observer.date), "azimuth mars sat")
         f = open("demofile2.txt", "a")
@@ -1396,7 +1396,7 @@ while True:
     azimuths = [mars.az, uranus.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mars uranus")
         results = (str(observer.date), "azimuth mars ura")
         f = open("demofile2.txt", "a")
@@ -1438,7 +1438,7 @@ while True:
     azimuths = [mars.az, neptune.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mars neptune")
         results = (str(observer.date), "azimuth mars neptune")
         f = open("demofile2.txt", "a")
@@ -1480,7 +1480,7 @@ while True:
     azimuths = [mars.az, pluto.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "mars pluto")
         results = (str(observer.date), "azimuth mars pluto")
         f = open("demofile2.txt", "a")
@@ -1522,7 +1522,7 @@ while True:
     azimuths = [jupiter.az, saturn.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "jupiter saturn")
         results = (str(observer.date), "azimuth jupiter saturn")
         f = open("demofile2.txt", "a")
@@ -1564,7 +1564,7 @@ while True:
     azimuths = [jupiter.az, uranus.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "jupiter uranus")
         results = (str(observer.date), "azimuth jupit uran")
         f = open("demofile2.txt", "a")
@@ -1606,7 +1606,7 @@ while True:
     azimuths = [jupiter.az, neptune.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "jupiter neptune")
         results = (str(observer.date), "azimuth jupiter neptune")
         f = open("demofile2.txt", "a")
@@ -1648,7 +1648,7 @@ while True:
     azimuths = [jupiter.az, pluto.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "jupiter pluto")
         results = (str(observer.date), "azimuth jupit pluto")
         f = open("demofile2.txt", "a")
@@ -1690,7 +1690,7 @@ while True:
     azimuths = [saturn.az, uranus.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "saturn uranus")
         results = (str(observer.date), "azimuth saturn uranus")
         f = open("demofile2.txt", "a")
@@ -1732,7 +1732,7 @@ while True:
     azimuths = [saturn.az, neptune.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "saturn neptune")
         results = (str(observer.date), "azimuth saturn neptune")
         f = open("demofile2.txt", "a")
@@ -1774,7 +1774,7 @@ while True:
     azimuths = [saturn.az, pluto.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "saturn plutio")
         results = (str(observer.date), "azimuth saturn pluto")
         f = open("demofile2.txt", "a")
@@ -1816,7 +1816,7 @@ while True:
     azimuths = [uranus.az, neptune.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "uranus neptune")
         results = (str(observer.date), "azimuth ura nept")
         f = open("demofile2.txt", "a")
@@ -1858,7 +1858,7 @@ while True:
     azimuths = [uranus.az, pluto.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "uranus pluto")
         results = (str(observer.date), "azimuth ura pluto")
         f = open("demofile2.txt", "a")
@@ -1900,7 +1900,7 @@ while True:
     azimuths = [neptune.az, pluto.az]
     max_az = max(azimuths)
     min_az = min(azimuths)
-    if (max_az - min_az) < ephem.degrees('0.5'):  # Check if the difference in azimuths is less than 1 degree
+    if (max_az - min_az) < ephem.degrees(str(separation_degree)):  # Check if the difference in azimuths is less than 1 degree
         print('{:%Y/%m/%d %H:%M:%S}'.format(observer.date.datetime()), "neptune pluto")
         results = (str(observer.date), "azimuth nept pluto")
         f = open("demofile2.txt", "a")
